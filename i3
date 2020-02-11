@@ -46,6 +46,9 @@ bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
 
+#Fullscreen Tela Cheia
+bindsym $modkey+f fullscreen toggle
+
 #Como Alternativa, Vc pode usar as teclas do cursor:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
