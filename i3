@@ -1,13 +1,13 @@
-# ╭━━╮╭━━━╮╱╱╱╱╭━━━╮╱╱╱╱╱╱╱╭╮╱╱╱╱╱╱╭╮╱╱╱╱╱╱╱
-# ╰┫┣╯┃╭━╮┃╱╱╱╱┃╭━╮┃╱╱╱╱╱╱╱┃┃╱╱╱╱╱╱┃┃╱╱╱╱╱╱╱
-# ╱┃┃╱╰╯╭╯┃╱╱╱╱┃┃╱┃┃╭━╮╭━━╮┃╰━╮╭━━╮┃┃╱╭╮╭━━╮
-# ╱┃┃╱╭╮╰╮┃╭━━╮┃╰━╯┃┃╭╯┃╭━╯┃╭╮┃┃┃━┫┃┃╱┣┫┃╭╮┃
-# ╭┫┣╮┃╰━╯┃╰━━╯┃╭━╮┃┃┃╱┃╰━╮┃┃┃┃┃┃━┫┃╰╮┃┃┃┃┃┃
-# ╰━━╯╰━━━╯╱╱╱╱╰╯╱╰╯╰╯╱╰━━╯╰╯╰╯╰━━╯╰━╯╰╯╰╯╰╯
-# ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱
-# ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱
+#     ___________   _____                      _ __       
+#              / ___/_  __/  / ___/___  _______  _______(_) /___  __
+#              \__ \ / /     \__ \/ _ \/ ___/ / / / ___/ / __/ / / /
+#            ___/ // /     ___/ /  __/ /__/ /_/ / /  / / /_/ /_/ / 
+#            /____//_/     /____/\___/\___/\__,_/_/  /_/\__/\__, /  
+#                                                         /____/   
 
-# GitHub https://github.com/SynCyber/i3-archelin
+
+# GitHub https://github.com/Jean-Arch/Sunset-root
+# Canal https://www.youtube.com/channel/UCtsF60-ybP2qD1s0YpDPRrw?view_as=subscriber
 # Modkey Padrao
 set $mod mod4
 
@@ -174,14 +174,15 @@ client.focused_inactive $bg $bg $green $green
 client.urgent $bg $bg $magenta $magenta
 client.placeholder $bg $bg $cyan $cyan
 
-# Inicie o i3blocks para exibir uma barra da Desktop
-
+# descomente essas 4 linhas a baixo para usar a barra i3status.
+#bar
+#{
+#  status_command i3status
+#}
 
 # Inicializar Alguns Programas
-exec_always --no-startup-id ~/.scripts/monitors.sh # Automaticamente nos monitores
-#exec_always --no-startup-id ~/.scripts/wallpapers.sh # Definir um papel de parede aleatorio
-exec --no-startup-id compton --config ~/.config/compton/compton.conf # Compositor de transparencia do Terminal
-exec --no-startup-id xfce4-power-manager # Para Monitorar a bateria
-exec --no-startup-id notify-send "Welcome back, Arch!" -i ~/home/bebe1/walp/428593-Kycb_3840x2160.jpg #saudacoes na inicializacao do sistema
-
-# coded by: ۪I۫۰۪3۫۰۪-۫۰۪A۫۰۪r۫۰۪c۫۰۪h۫۰۪e۫۰۪l۫۰۪i۫۰۪n۫۰
+exec_always --no-startup-id ~/.scripts/monitors.sh # Automaticamente nos monitores.
+#exec_always --no-startup-id ~/.scripts/wallpapers.sh # Definir um papel de parede aleatorio.
+exec --no-startup-id compton --config ~/.config/compton/compton.conf # Compositor de transparencia do Terminal.
+exec --no-startup-id xfce4-power-manager # Para Monitorar a bateria.
+exec --no-startup-id notify-send "Welcome back, Arch!" -i ~/home/bebe1/walp/428593-Kycb_3840x2160.jpg #saudações na inicializacao do sistema.
